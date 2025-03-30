@@ -85,7 +85,7 @@ try {
 
     $orderDetails .= "<table border='1' cellpadding='10' cellspacing='0' style='width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;'>";
     $orderDetails .= "<thead style='background-color: #f2f2f2;'>";
-    $orderDetails .= "<tr style='color: #fff; background-color: #4CAF50; text-align: left;'>";
+    $orderDetails .= "<tr style='color: #fff; background-color: #311c73; text-align: left;'>";
     $orderDetails .= "<th style='border: 1px solid #ddd; padding: 8px;'>Proizvod</th>";
     $orderDetails .= "<th style='border: 1px solid #ddd; padding: 8px;'>Količina</th>";
     $orderDetails .= "<th style='border: 1px solid #ddd; padding: 8px;'>Cena</th>";
@@ -104,9 +104,7 @@ try {
     }
     $orderDetails .= "</tbody></table>";
 
-    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupna cena proizvoda:</strong> {$ukupnaCena} RSD</p>";
-    $orderDetails .= "<p style='font-size: 16px;'><strong>Cena dostave:</strong> {$cenaDostave} RSD</p>";
-    $orderDetails .= "<p style='font-size: 18px; font-weight: bold;'><strong>Ukupno za naplatu:</strong> " . ($ukupnaCena + $cenaDostave) . " RSD</p>";
+    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupna za naplatu:</strong> {$ukupnaCena} RSD</p>";
 
 
     // Send confirmation email
@@ -114,15 +112,15 @@ try {
     try {
         //Server settings
         $mail->isSMTP();                                     
-        $mail->Host = 'mail.tvojluksuz.rs';                 
+        $mail->Host = 'mail.klikcentar.com';                 
         $mail->SMTPAuth = true;                               
-        $mail->Username = 'prodaja@tvojluksuz.rs';       
-        $mail->Password = 'i-N.F2rNE3xUrgb';                    
+        $mail->Username = 'prodaja@klikcentar.com';       
+        $mail->Password = 'h5eE3kFxV_HWs98';                    
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
         $mail->Port = 587;                                   
 
         //Recipients
-        $mail->setFrom('prodaja@tvojluksuz.rs', 'Tvoj luksuz');
+        $mail->setFrom('prodaja@klikcentar.com', 'Klikcentar');
         $mail->addAddress($data['email']);  // Customer's email
 
         // Email content
