@@ -28,13 +28,8 @@ try {
     foreach ($data['cartItems'] as $item) {
         $ukupnaCena += $item['price'] * $item['quantity'];
     }
-
-    // Determine the shipping cost: free if total price is more than 2500 RSD
-    if ($ukupnaCena > 2500) {
-        $cenaDostave = 0;  // Free shipping
-    } else {
-        $cenaDostave = 300; // Standard shipping cost
-    }
+    
+    $cenaDostave = 0;  
 
     // Insert into porudzbine table
     $stmt = $conn->prepare("INSERT INTO porudzbine (ime, prezime, adresa, grad, postanski_broj, broj_telefona, mejl, ukupna_cena, cena_dostave) 
