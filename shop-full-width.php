@@ -103,9 +103,9 @@ $productCount = count($filteredProducts);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="ecommerce, market, shop, mart, cart, deal, multipurpose, marketplace">
-    <meta name="description" content="Svi proizvodi - Tvoj luksuz">
-    <meta name="author" content="milosmitrovic20">
-    <title>Svi proizvodi - Tvoj luksuz</title>
+    <meta name="description" content="Svi proizvodi - Klikcentar">
+    <meta name="author" content="adnect">
+    <title>Svi proizvodi - Klikcentar</title>
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/img/logo/favicon.png">
