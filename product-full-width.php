@@ -70,6 +70,7 @@ while ($row = $result->fetch_assoc()) {
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/color-3.css" id="add_class">
 
 </head>
 
