@@ -1,9 +1,9 @@
 <?php
 // Database connection
 $servername = "localhost";
-$username = "tvojluks_admin";  // Adjust to your MySQL username
+$username = "klikwzqp_admin";  // Adjust to your MySQL username
 $password = "Miloskralj2005";      // Adjust to your MySQL password
-$dbname = "tvojluks_webshop";  // Adjust to your database name
+$dbname = "klikwzqp_webshop";  // Adjust to your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
