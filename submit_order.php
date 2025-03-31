@@ -112,7 +112,7 @@ try {
         $mail->Username = 'prodaja@klikcentar.com';       
         $mail->Password = 'h5eE3kFxV_HWs98';                    
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
-        $mail->Port = 465;                                   
+        $mail->Port = 587;                                   
 
         //Recipients
         $mail->setFrom('prodaja@klikcentar.com', 'Klikcentar');
