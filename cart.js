@@ -126,7 +126,7 @@ const displayCartProducts = () => {
         const productHTML = `
             <tr class="border-b-[1px] border-solid border-[#e9e9e9]">
                 <!-- Proizvod - sakriven na malim ekranima -->
-                <td class="hidden sm:table-cell cr-cart-name w-[30%] py-[15px] px-[10px] text-[#444] text-[14px] text-left bg-[#f7f7f8]">
+                <td class="sm:table-cell cr-cart-name w-[30%] py-[15px] px-[10px] text-[#444] text-[14px] text-left bg-[#f7f7f8]">
                     <a href="javascript:void(0)" class="text-[#444] font-medium text-xs sm:text-[14px] flex leading-[1.5] tracking-[0.6px] items-center">
                         ${item.name}
                     </a>
