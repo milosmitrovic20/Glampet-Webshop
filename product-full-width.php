@@ -214,9 +214,9 @@ while ($row = $result->fetch_assoc()) {
                     <div class="cr-size-and-weight pt-[20px]">
                         <div class="list">
                             <ul class="mt-[15px] p-[0] mb-[1rem]">
-                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Dimenzije <span>:</span></label><?php echo $product['dimensions']; ?></li>
                                 <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Boja<span>:</span></label><?php echo $product['color']; ?></li>
-                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Materijal <span>:</span></label><?php echo $product['material']; ?></li>
+                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Dostava za 2-3 radna dana</label></li>
+                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Plaćanje pouzećem</li>
                             </ul>
                         </div>
                         <div class="cr-product-price pt-[20px]">
