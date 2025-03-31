@@ -131,7 +131,7 @@ const displayCartProducts = () => {
                         ${item.name}
                     </a>
                 </td>
-                <td class="cr-cart-price w-[20%] md:w-auto py-[25px] px-[14px] text-[#555] text-[15px] font-medium text-left bg-[#f7f7f8]">
+                <td class="cr-cart-price w-[17%] md:w-auto py-[25px] px-[14px] text-[#555] text-[15px] font-medium text-left bg-[#f7f7f8]">
                     <span class="amount text-[#555] text-[15px] font-medium text-left">${item.price} RSD</span>
                 </td>
                 <td class="cr-cart-qty w-[20%] md:w-auto py-[25px] px-[14px] text-[#444] text-[16px] text-left bg-[#f7f7f8]">
@@ -141,7 +141,7 @@ const displayCartProducts = () => {
                         <button type="button" class="minus h-[25px] w-[25px] mt-[-2px] border-[0] bg-transparent flex justify-center items-center" data-id="${item.id}">-</button>
                     </div>
                 </td>
-                <td class="cr-cart-subtotal w-[20%] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-left bg-[#f7f7f8]">${item.price * item.quantity} RSD</td>
+                <td class="cr-cart-subtotal w-[17%] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-left bg-[#f7f7f8]">${item.price * item.quantity} RSD</td>
                 <td class="cr-cart-remove w-[10%] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-right bg-[#f7f7f8]">
                     <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out my-[0] mx-auto text-[#555] hover:text-[#fb5555]" data-id="${item.id}">
                         <i class="ri-delete-bin-line text-[22px]"></i>
