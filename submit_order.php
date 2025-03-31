@@ -107,12 +107,12 @@ try {
     try {
         //Server settings
         $mail->isSMTP();                                     
-        $mail->Host = 'mail.klikcentar.com';                 
+        $mail->Host = 'klikcentar.com';                 
         $mail->SMTPAuth = true;                               
         $mail->Username = 'prodaja@klikcentar.com';       
         $mail->Password = 'h5eE3kFxV_HWs98';                    
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
-        $mail->Port = 587;                                   
+        $mail->Port = 465;                                   
 
         //Recipients
         $mail->setFrom('prodaja@klikcentar.com', 'Klikcentar');
