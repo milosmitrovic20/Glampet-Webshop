@@ -127,7 +127,6 @@ const displayCartProducts = () => {
             <tr class="border-b-[1px] border-solid border-[#e9e9e9]">
                 <td class="cr-cart-name w-[40%] py-[25px] px-[14px] text-[#444] text-[16px] text-left bg-[#f7f7f8]">
                     <a href="javascript:void(0)" class="text-[#444] font-medium text-[14px] flex leading-[1.5] tracking-[0.6px] items-center">
-                        <img src="${item.image}" alt="${item.name}" class="cr-cart-img mr-[20px] w-[60px] border-[1px] border-solid border-[#e9e9e9] rounded-[5px]">
                         ${item.name}
                     </a>
                 </td>
