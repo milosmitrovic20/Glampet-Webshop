@@ -266,10 +266,10 @@ while ($row = $result->fetch_assoc()) {
     <!-- Custom Add to Cart Popup -->
     <div id="add-to-cart-popup" class="z-[9999] fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
         <div class="bg-white rounded-lg shadow-lg p-6 w-[300px] text-center">
-            <h2 class="text-xl font-bold text-[#64b496] mb-2">Proizvod dodat!</h2>
+            <h2 class="text-xl font-bold text-[#311c73] mb-2">Proizvod dodat!</h2>
             <p id="popup-product-name" class="text-[#444] text-[14px] mb-4"></p>
-            <a href="cart.html" class="bg-[#64b496] text-white px-4 py-2 rounded hover:bg-[#000] hover:text-white transition">Idi na plaćanje</a>
-            <button id="close-popup" class="text-[#64b496] mt-4 underline hover:text-[#000] transition">Nastavi kupovinu</button>
+            <a href="cart.html" class="bg-[#311c73] text-white px-4 py-2 rounded hover:bg-[#000] hover:text-white transition">Idi na plaćanje</a>
+            <button id="close-popup" class="text-[#311c73] mt-4 underline hover:text-[#000] transition">Nastavi kupovinu</button>
         </div>
     </div>
 
@@ -278,7 +278,7 @@ while ($row = $result->fetch_assoc()) {
         <div class="popup-content bg-white p-6 rounded-[10px] shadow-lg w-[300px] text-center relative">
             <h3 id="popup-title" class="text-[20px] font-bold mb-[10px]"></h3>
             <p id="popup-message" class="text-[16px]"></p>
-            <button id="close-email-popup" class="mt-[20px] py-[8px] px-[20px] bg-[#64b496] text-white rounded-[5px] hover:bg-[#000] transition-all">Zatvori</button>
+            <button id="close-email-popup" class="mt-[20px] py-[8px] px-[20px] bg-[#311c73] text-white rounded-[5px] hover:bg-[#000] transition-all">Zatvori</button>
         </div>
     </div>
 
