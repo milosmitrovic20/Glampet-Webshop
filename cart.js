@@ -142,7 +142,7 @@ const displayCartProducts = () => {
                     </div>
                 </td>
                 <td class="cr-cart-subtotal w-[20%] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-left bg-[#f7f7f8]">${item.price * item.quantity} RSD</td>
-                <td class="cr-cart-remove w-[50px] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-right bg-[#f7f7f8]">
+                <td class="cr-cart-remove w-[10%] md:w-auto py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-right bg-[#f7f7f8]">
                     <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out my-[0] mx-auto text-[#555] hover:text-[#fb5555]" data-id="${item.id}">
                         <i class="ri-delete-bin-line text-[22px]"></i>
                     </a>
