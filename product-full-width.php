@@ -230,7 +230,7 @@ while ($row = $result->fetch_assoc()) {
                                 <button type="button" class="minus w-[18px] h-[18px] p-[0] bg-[#fff] border-[1px] border-solid border-[#e9e9e9] rounded-[5px] leading-[0] absolute bottom-[0] right-[0]">-</button>
                             </div>
                             <div class="cr-add-button ml-[15px] max-[380px]:hidden">
-                                <button type="button" data-id="<?php echo $productId; ?>" data-name="<?php echo $product['title']; ?>" data-price="<?php echo $product['discounted_price']; ?>" data-image="<?php echo $images[0]; ?>" class="add-to-cart cr-button cr-shopping-bag h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#64b496] text-[#fff] border-[1px] border-solid border-[#64b496] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000] max-[1199px]:py-[8px] max-[1199px]:px-[15px]">Dodaj u korpu</button>
+                                <button type="button" data-id="<?php echo $productId; ?>" data-name="<?php echo $product['title']; ?>" data-price="<?php echo $product['discounted_price']; ?>" data-image="<?php echo $images[0]; ?>" class="add-to-cart cr-button cr-shopping-bag h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#311c73] text-[#fff] border-[1px] border-solid border-[#311c73] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000] max-[1199px]:py-[8px] max-[1199px]:px-[15px]">Dodaj u korpu</button>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ while ($row = $result->fetch_assoc()) {
                                     </div>
                                     <h4 class="heading mb-[0] pt-[30px] pb-[20px] font-Poppins text-[16px] font-medium leading-[1.5] text-left text-[#2b2b2d] border-b-[1px] border-solid border-[#e9e9e9]">Pakovanje i dostava</h4>
                                     <div class="cr-description pt-[30px]">
-                                        <p class="text-[14px] text-left mb-[0] font-Poppins text-[#7a7a7a] leading-[1.75]">Dostava za 2-3 radna dana. Cena dostave je 300 dinara, a za porudžbine preko 2.500 dinara dostava je besplatna.</p>
+                                        <p class="text-[14px] text-left mb-[0] font-Poppins text-[#7a7a7a] leading-[1.75]">Dostava za 2-3 radna dana, direktno na vašu adresu. Troškovi dostave su potpuno pokriveni u okviru cene proizvoda.</p>
                                     </div>
                                 </div>
                             </div>
