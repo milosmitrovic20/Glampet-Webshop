@@ -10,6 +10,9 @@ require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 require 'vendor/phpmailer/phpmailer/src/Exception.php';
 
+$conn->set_charset("utf8mb4");
+mysqli_set_charset($conn, "utf8mb4");
+
 // Get the POST data from the request
 $data = json_decode(file_get_contents("php://input"), true);
 
@@ -105,6 +108,7 @@ try {
     // Send confirmation email
     $mail = new PHPMailer(true);
     try {
+        $mail->CharSet = 'UTF-8';
         //Server settings
         $mail->isSMTP();                                     
         $mail->Host = 'klikcentar.com';                 
