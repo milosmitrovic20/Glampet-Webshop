@@ -102,7 +102,7 @@ try {
     }
     $orderDetails .= "</tbody></table>";
 
-    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupna za naplatu:</strong> {$ukupnaCena} RSD</p>";
+    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupno za naplatu:</strong> {$ukupnaCena} RSD</p>";
 
 
     // Send confirmation email
@@ -124,7 +124,7 @@ try {
 
         // Email content
         $mail->isHTML(true);                                  
-        $mail->Subject = 'Potvrda porudzbine';
+        $mail->Subject = 'Potvrda porudžbine';
         $mail->Body    = '<b>Hvala na porudžbini!</b><br>' . $orderDetails;
         $mail->AltBody = 'Hvala na porudžbini!';
 
