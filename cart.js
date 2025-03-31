@@ -125,29 +125,36 @@ const displayCartProducts = () => {
     cartItems.forEach((item) => {
         const productHTML = `
             <tr class="border-b-[1px] border-solid border-[#e9e9e9]">
-                <td class="cr-cart-name w-[40%] py-[25px] px-[14px] text-[#444] text-[16px] text-left bg-[#f7f7f8]">
-                    <a href="javascript:void(0)" class="text-[#444] font-medium text-[14px] flex leading-[1.5] tracking-[0.6px] items-center">
+                <!-- Proizvod - sakriven na malim ekranima -->
+                <td class="hidden sm:table-cell cr-cart-name w-[30%] py-[15px] px-[10px] text-[#444] text-[14px] text-left bg-[#f7f7f8]">
+                    <a href="javascript:void(0)" class="text-[#444] font-medium text-xs sm:text-[14px] flex leading-[1.5] tracking-[0.6px] items-center">
                         ${item.name}
                     </a>
                 </td>
-                <td class="cr-cart-price py-[25px] px-[14px] text-[#555] text-[15px] font-medium text-left bg-[#f7f7f8]">
-                    <span class="amount text-[#555] text-[15px] font-medium text-left">${item.price} RSD</span>
+                <!-- Cena -->
+                <td class="cr-cart-price py-[15px] px-[10px] text-[#555] text-xs sm:text-[15px] font-medium text-left bg-[#f7f7f8]">
+                    <span class="amount">${item.price} RSD</span>
                 </td>
-                <td class="cr-cart-qty py-[25px] px-[14px] text-[#444] text-[16px] text-left bg-[#f7f7f8]">
-                    <div class="cart-qty-plus-minus w-[80px] h-[30px] my-[0] mx-auto relative overflow-hidden flex bg-[#fff] border-[1px] border-solid border-[#e9e9e9] rounded-[5px] items-center justify-between">
-                        <button type="button" class="plus h-[25px] w-[25px] mt-[-2px] border-[0] bg-transparent flex justify-center items-center" data-id="${item.id}">+</button>
-                        <input type="text" placeholder="." value="${item.quantity}" minlength="1" maxlength="20" class="quantity w-[30px] m-[0] p-[0] text-[#444] float-left text-[14px] font-semibold leading-[38px] h-auto text-center outline-[0]">
-                        <button type="button" class="minus h-[25px] w-[25px] mt-[-2px] border-[0] bg-transparent flex justify-center items-center" data-id="${item.id}">-</button>
+                <!-- Količina -->
+                <td class="cr-cart-qty py-[15px] px-[10px] text-[#444] text-xs sm:text-[15px] text-center bg-[#f7f7f8]">
+                    <div class="cart-qty-plus-minus w-[70px] h-[28px] relative flex bg-[#fff] border border-[#e9e9e9] rounded-[5px] items-center justify-between">
+                        <button type="button" class="plus h-[25px] w-[25px] bg-transparent flex justify-center items-center" data-id="${item.id}">+</button>
+                        <input type="text" value="${item.quantity}" class="quantity w-[20px] text-center text-xs sm:text-[14px] font-semibold outline-none">
+                        <button type="button" class="minus h-[25px] w-[25px] bg-transparent flex justify-center items-center" data-id="${item.id}">-</button>
                     </div>
                 </td>
-                <td class="cr-cart-subtotal py-[25px] px-[14px] text-[#555] font-medium text-[15px] text-left bg-[#f7f7f8]">${item.price * item.quantity} RSD</td>
-                <td class="cr-cart-remove py-[25px] px-[14px] w-[90px] text-[#555] font-medium text-[15px] text-right bg-[#f7f7f8]">
-                    <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out my-[0] mx-auto text-[#555] hover:text-[#fb5555]" data-id="${item.id}">
-                        <i class="ri-delete-bin-line text-[22px]"></i>
+                <!-- Ukupno -->
+                <td class="cr-cart-subtotal py-[15px] px-[10px] text-[#555] font-medium text-xs sm:text-[15px] text-left bg-[#f7f7f8]">
+                    ${item.price * item.quantity} RSD
+                </td>
+                <!-- Brisanje -->
+                <td class="cr-cart-remove py-[15px] px-[10px] w-[50px] sm:w-[90px] text-[#555] text-right bg-[#f7f7f8]">
+                    <a href="javascript:void(0)" class="transition-all duration-300 ease-in-out text-[#555] hover:text-[#fb5555]" data-id="${item.id}">
+                        <i class="ri-delete-bin-line text-[18px] sm:text-[22px]"></i>
                     </a>
                 </td>
             </tr>
-        `;
+            `;
 
         // Append the product HTML to the cart table body
         cartTableBody.insertAdjacentHTML('beforeend', productHTML);
