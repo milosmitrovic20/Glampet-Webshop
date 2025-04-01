@@ -63,14 +63,21 @@ const displayCartItems = () => {
 // Call the function to display cart items
 displayCartItems();
 
-document.querySelector('.cr-check-order-btn').addEventListener('click', async (event) => {
-    event.preventDefault();  // Prevent the form from submitting normally
+document.querySelector('.cr-check-order-btn a').addEventListener('click', async (event) => {
+    const submitButton = event.target;
+
+    // If button is "disabled", prevent the request
+    if (submitButton.classList.contains("pointer-events-none")) {
+        return;  // Stop execution if the button is disabled
+    }
+
+    event.preventDefault();  // Prevent the default behavior
 
     // Get the form element
-    const form = document.getElementById('checkout-form'); // Use the correct form ID
+    const form = document.getElementById('checkout-form');
 
     // Collect form data
-    const formData = new FormData(form); // Pass the form element here
+    const formData = new FormData(form);
 
     // Convert form data to an object
     const data = {};
@@ -80,17 +87,13 @@ document.querySelector('.cr-check-order-btn').addEventListener('click', async (e
 
     // Convert cart items (from localStorage) into an array
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Add cart items to the data object
     data.cartItems = cartItems;
 
     // Send data to the server via fetch
     try {
         const response = await fetch('submit_order.php', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
         });
 
@@ -98,8 +101,7 @@ document.querySelector('.cr-check-order-btn').addEventListener('click', async (e
 
         if (result.success) {
             showOrderPopup('Hvala na porudžbini!', 'Vaša porudžbina je uspešno zabeležena. Uskoro ćete dobiti potvrdu poružbine na mejl adresi.');
-            // Clear the cart from localStorage after successful submission
-            localStorage.removeItem('cart');
+            localStorage.removeItem('cart');  // Clear cart after successful submission
         } else {
             console.error(result.error);
         }
@@ -107,7 +109,6 @@ document.querySelector('.cr-check-order-btn').addEventListener('click', async (e
         console.error('Greška prilikom naručivanja:', error);
     }
 
-    // Function to show the custom popup
     function showOrderPopup(title, message) {
         const popup = document.getElementById('order-popup');
         const popupTitle = document.getElementById('popup-title2');
