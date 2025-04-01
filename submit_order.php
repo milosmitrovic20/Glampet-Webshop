@@ -17,7 +17,7 @@ mysqli_set_charset($conn, "utf8mb4");
 $data = json_decode(file_get_contents("php://input"), true);
 
 // Check if required fields are present
-if (!isset($data['first_name'], $data['last_name'], $data['address'], $data['city'], $data['zip_code'], $data['phone'], $data['cartItems'])) {
+if (!isset($data['first_name'], $data['last_name'], $data['address'], $data['city'], $data['zip_code'], $data['phone'], $data['email'], $data['cartItems'])) {
     echo json_encode(['success' => false, 'error' => 'Nedostaju potrebni podaci']);
     exit;
 }
@@ -47,7 +47,7 @@ try {
         $data['city'],
         $data['zip_code'],
         $data['phone'],
-        "",
+        $data['email'],
         $ukupnaCena,
         $cenaDostave
     );
