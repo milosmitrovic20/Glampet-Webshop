@@ -258,20 +258,28 @@ $productCount = count($filteredProducts);
                         <?php if ($productCount > 0): ?>
                             <?php foreach ($filteredProducts as $product): ?>
                                 <div class="min-[992px]:w-[25%] w-[50%] max-[480px]:w-full px-[12px] cr-product-box mb-[24px]">
-                                    <div class="cr-product-card h-full p-[12px] border-[1px] border-solid border-[#e9e9e9] bg-[#fff] rounded-[5px] overflow-hidden flex-col max-[480px]:w-full">
-                                        <div class="cr-product-image rounded-[5px] flex items-center justify-center relative">
-                                            <div class="cr-image-inner w-full h-full flex items-center justify-center relative overflow-hidden max-[991px]:pointer-events-none">
-                                                <img src="<?php echo $product['url_slike']; ?>" alt="<?php echo $product['naziv']; ?>" class="w-full rounded-[5px]">
+                                    <a href="product-full-width.php?id=<?php echo $product['id_proizvoda']; ?>" class="block h-full">
+                                        <div class="cr-product-card h-full p-[12px] border-[1px] border-solid border-[#e9e9e9] bg-[#fff] rounded-[5px] overflow-hidden flex-col max-[480px]:w-full cursor-pointer">
+                                            <div class="cr-product-image rounded-[5px] flex items-center justify-center relative">
+                                                <div class="cr-image-inner w-full h-full flex items-center justify-center relative overflow-hidden max-[991px]:pointer-events-none">
+                                                    <img src="<?php echo $product['url_slike']; ?>" alt="<?php echo $product['naziv']; ?>" class="w-full rounded-[5px]">
+                                                </div>
+                                            </div>
+                                            <div class="cr-product-details pt-[24px] text-center overflow-hidden max-[1199px]:pt-[20px]">
+                                                <p class="title transition-all duration-[0.3s] ease-in-out mb-[12px] font-Poppins text-[15px] font-medium leading-[24px] text-[#2b2b2d] hover:text-[#64b496] flex justify-center">
+                                                    <?php echo $product['naziv']; ?>
+                                                </p>
+                                                <p class="cr-price font-Poppins text-[16px] text-[#7a7a7a] leading-[1.75] max-[1199px]:text-[14px]">
+                                                    <span class="new-price font-Poppins text-[16px] leading-[1.75] max-[1199px]:text-[14px] font-bold text-[#64b496]">
+                                                        <?php echo $product['cena_sa_popustom']; ?> RSD
+                                                    </span> 
+                                                    <span class="old-price font-Poppins ml-[5px] leading-[1.75] text-[13px] line-through text-[#7a7a7a] max-[1199px]:text-[12px]">
+                                                        <?php echo $product['cena_bez_popusta']; ?> RSD
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="cr-product-details pt-[24px] text-center overflow-hidden max-[1199px]:pt-[20px]">
-                                            <a href="product-full-width.php?id=<?php echo $product['id_proizvoda']; ?>" class="title transition-all duration-[0.3s] ease-in-out mb-[12px] font-Poppins text-[15px] font-medium leading-[24px] text-[#2b2b2d] hover:text-[#64b496] flex justify-center"><?php echo $product['naziv']; ?></a>
-                                            <p class="cr-price font-Poppins text-[16px] text-[#7a7a7a] leading-[1.75] max-[1199px]:text-[14px]">
-                                                <span class="new-price font-Poppins text-[16px] leading-[1.75] max-[1199px]:text-[14px] font-bold text-[#64b496]"><?php echo $product['cena_sa_popustom']; ?> RSD</span> 
-                                                <span class="old-price font-Poppins ml-[5px] leading-[1.75] text-[13px] line-through text-[#7a7a7a] max-[1199px]:text-[12px]"><?php echo $product['cena_bez_popusta']; ?> RSD</span>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
                             <?php endforeach; ?>
                         <?php else: ?>
