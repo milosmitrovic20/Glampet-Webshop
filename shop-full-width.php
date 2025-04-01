@@ -260,7 +260,7 @@ $productCount = count($filteredProducts);
                                 <div class="min-[992px]:w-[25%] w-[50%] max-[480px]:w-full px-[12px] cr-product-box mb-[24px]">
                                     <div class="cr-product-card h-full p-[12px] border-[1px] border-solid border-[#e9e9e9] bg-[#fff] rounded-[5px] overflow-hidden flex-col max-[480px]:w-full">
                                         <div class="cr-product-image rounded-[5px] flex items-center justify-center relative">
-                                            <div class="cr-image-inner zoom-image-hover w-full h-full flex items-center justify-center relative overflow-hidden max-[991px]:pointer-events-none">
+                                            <div class="cr-image-inner w-full h-full flex items-center justify-center relative overflow-hidden max-[991px]:pointer-events-none">
                                                 <img src="<?php echo $product['url_slike']; ?>" alt="<?php echo $product['naziv']; ?>" class="w-full rounded-[5px]">
                                             </div>
                                         </div>
