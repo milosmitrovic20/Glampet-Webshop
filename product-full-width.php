@@ -183,7 +183,7 @@ while ($row = $result->fetch_assoc()) {
                             <div class="slider slider-for mb-[15px]">
                                 <?php foreach ($images as $image_url): ?>
                                     <div class="slider-banner-image">
-                                        <div class="zoom-image-hover h-full flex items-center text-center border-[1px] border-solid border-[#e9e9e9] bg-[#f7f7f8] rounded-[5px] cursor-pointer">
+                                        <div class="h-full flex items-center text-center border-[1px] border-solid border-[#e9e9e9] bg-[#f7f7f8] rounded-[5px] cursor-pointer">
                                             <img src="<?php echo $image_url; ?>" alt="Product Image" class="product-image w-full block m-auto">
                                         </div>
                                     </div>
