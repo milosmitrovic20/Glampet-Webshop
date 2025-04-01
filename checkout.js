@@ -123,3 +123,35 @@ document.querySelector('.cr-check-order-btn').addEventListener('click', async (e
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("checkout-form");
+    const submitButton = document.querySelector(".cr-check-order-btn a");
+
+    function checkInputs() {
+      const inputs = form.querySelectorAll("input[required]");
+      let allFilled = true;
+
+      inputs.forEach(input => {
+        if (input.value.trim() === "") {
+          allFilled = false;
+        }
+      });
+
+      if (allFilled) {
+        submitButton.classList.remove("pointer-events-none", "opacity-50");
+        submitButton.removeAttribute("disabled");
+      } else {
+        submitButton.classList.add("pointer-events-none", "opacity-50");
+        submitButton.setAttribute("disabled", "true");
+      }
+    }
+
+    // Add event listeners to all required inputs
+    form.querySelectorAll("input[required]").forEach(input => {
+      input.addEventListener("input", checkInputs);
+    });
+
+    // Initialize button state
+    checkInputs();
+});
