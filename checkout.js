@@ -16,7 +16,10 @@ const calculateTotalPrice = () => {
     const totalPriceWithShippingElement = document.querySelector('.cr-checkout-summary-total span.text-right');
 
     // Display the total price in the specified element
-    totalPriceWithShippingElement.textContent = `${totalPrice} RSD`;
+    totalPriceWithShippingElement.textContent = `${totalPrice + 400} RSD`;
+
+    const deliveryPriceElement = document.querySelector('.cr-checkout-summary .delivery-price');
+    deliveryPriceElement.textContent = `400 RSD`;
 };
 
 // Call the function to update the total price

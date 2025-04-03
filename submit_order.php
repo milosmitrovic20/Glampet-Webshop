@@ -32,7 +32,7 @@ try {
         $ukupnaCena += $item['price'] * $item['quantity'];
     }
     
-    $cenaDostave = 0;  
+    $cenaDostave = 400;  
 
     // Insert into porudzbine table
     $stmt = $conn->prepare("INSERT INTO porudzbine (ime, prezime, adresa, grad, postanski_broj, broj_telefona, mejl, ukupna_cena, cena_dostave) 
@@ -102,7 +102,9 @@ try {
     }
     $orderDetails .= "</tbody></table>";
 
-    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupno za naplatu:</strong> {$ukupnaCena} RSD</p>";
+    $orderDetails .= "<p style='font-size: 16px;'><strong>Ukupna cena proizvoda:</strong> {$ukupnaCena} RSD</p>";
+    $orderDetails .= "<p style='font-size: 16px;'><strong>Cena dostave:</strong> {$cenaDostave} RSD</p>";
+    $orderDetails .= "<p style='font-size: 18px; font-weight: bold;'><strong>Ukupno za naplatu:</strong> " . ($ukupnaCena + $cenaDostave) . " RSD</p>";
 
 
     // Send confirmation email
