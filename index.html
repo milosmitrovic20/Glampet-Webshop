@@ -27,51 +27,55 @@
 
     <!-- Tailwind CSS -->
     <script src="assets/js/vendor/tailwindcss3.4.5.js"></script>
-    <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1222071759283044');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1222071759283044&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-
+    
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/color-3.css" id="add_class">
+
+    <style>
+        .color-white {
+            color: #fff !important;
+        }
+        .color-glam {
+            color: #DAB877 !important;
+        }
+        .color-black {
+            color: #000 !important;
+        }
+        .border-black {
+            border-color: #000 !important;
+        }
+        .custom-placeholder::placeholder {
+            color: #fff !important;
+        }
+        .custom-placeholder2::placeholder {
+            color: #dab877 !important;
+        }
+    </style>
     
 </head>
 
 <body class="body-bg-6">
 
      <!-- Header -->
-     <header class="h-[142px] max-[991px]:h-[133px] max-[575px]:h-[173px] bg-[#fff] border-b-[1px] border-solid border-[#e9e9e9]">
+     <header class="h-[142px] max-[991px]:h-[133px] max-[575px]:h-[173px] bg-[#000]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px]">
-                    <div class="top-header py-[20px] flex flex-row gap-[10px] justify-between border-b-[1px] border-solid border-[#e9e9e9] relative z-[4] max-[575px]:py-[15px] max-[575px]:block">
+                    <div class="top-header py-[20px] flex flex-row gap-[10px] justify-between border-b-[1px] border-solid border-[#DAB877] relative z-[4] max-[575px]:py-[15px] max-[575px]:block">
                         <a href="index.html" class="cr-logo max-[575px]:mb-[15px] max-[575px]:flex max-[575px]:justify-center">
-                            <img src="assets/img/logo/logo.svg" alt="logo" class="logo block h-[35px] max-[575px]:w-[100px]">
+                            <img src="assets/img/logo/logo2.png" alt="logo" class="logo block h-[35px] max-[575px]:w-[100px]">
                         </a>
                         <form class="cr-search relative max-[575px]:max-w-[350px] max-[575px]:m-auto" action="shop-full-width.php" method="get">
-                            <input class="search-input w-[600px] h-[45px] pl-[15px] pr-[175px] border-[1px] border-solid border-[#64b496] rounded-[5px] outline-[0] max-[1399px]:w-[400px] max-[991px]:max-w-[350px] max-[575px]:w-full max-[420px]:pr-[45px]" type="text" name="query" placeholder="Pretraži sajt">
+                            <input class="search-input bg-[#000] w-[600px] h-[45px] pl-[15px] pr-[175px] border-[1px] border-solid border-[#64b496] rounded-[5px] outline-[0] max-[1399px]:w-[400px] max-[991px]:max-w-[350px] max-[575px]:w-full max-[420px]:pr-[45px] custom-placeholder2 color-glam" type="text" name="query" placeholder="Pretražite...">
                             <a href="javascript:void(0)" class="search-btn w-[45px] bg-[#64b496] absolute right-[0] top-[0] bottom-[0] rounded-r-[5px] flex items-center justify-center" id="searchButton">
-                                <i class="ri-search-line text-[14px] text-[#fff]"></i>
+                                <i class="ri-search-line text-[14px]"></i>
                             </a>
                         </form>
                         <div class="cr-right-bar flex max-[991px]:hidden">
                             <a href="cart.html" class="cr-right-bar-item transition-all duration-[0.3s] ease-in-out flex items-center">
-                                <i class="ri-shopping-bag-line pr-[5px] text-[21px] leading-[17px]"></i>
-                                <span class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] leading-[15px] font-medium text-[#000]">Korpa</span>
+                                <i class="ri-shopping-bag-line pr-[5px] text-[21px] text-[#DAB877] leading-[17px]"></i>
+                                <span class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] leading-[15px] font-medium text-[#DAB877]">Korpa</span>
                             </a>
                         </div>
                     </div>
@@ -83,8 +87,8 @@
                 <div class="cr-menu-list w-full px-[12px] relative flex items-center flex-row justify-between">
                     <div class="cr-category-icon-block py-[10px] max-[991px]:hidden">
                         <div class="cr-category-menu relative">
-                            <div class="cr-category-toggle w-[35px] h-[35px] border-[1px] border-solid border-[#e9e9e9] rounded-[5px] cursor-pointer flex items-center justify-center">
-                                <i class="ri-menu-2-line text-[22px] text-[#2b2b2d] leading-[14px] block"></i>
+                            <div class="cr-category-toggle w-[35px] h-[35px] rounded-[5px] cursor-pointer flex items-center justify-center">
+                                <i class="ri-menu-2-line text-[22px] text-[#DAB877] leading-[14px] block"></i>
                             </div>
                         </div>
                     </div>
@@ -100,17 +104,17 @@
                         <div class="min-[992px]:flex min-[992px]:basis-auto grow-[1] items-center hidden" id="navbarSupportedContent">
                             <ul class="navbar-nav flex min-[992px]:flex-row items-center m-auto relative z-[3] min-[992px]:flex-row max-[1199px]:mr-[-5px] max-[991px]:m-[0]">
                                 <li class="nav-item relative mr-[25px] max-[1399px]:mr-[20px] max-[1199px]:mr-[30px]">
-                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#000] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="index.html">
+                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#DAB877] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="index.html">
                                         Početna
                                     </a>
                                 </li>
                                 <li class="nav-item relative mr-[25px] max-[1399px]:mr-[20px] max-[1199px]:mr-[30px]">
-                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#000] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="shop-full-width.php">
+                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#DAB877] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="shop-full-width.php">
                                         Proizvodi
                                     </a>
                                 </li>
                                 <li class="nav-item relative">
-                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#000] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="contact-us.html">
+                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#DAB877] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="contact-us.html">
                                         Kontakt
                                     </a>
                                 </li>
@@ -118,8 +122,8 @@
                         </div>
                     </nav>
                     <div class="cr-calling flex justify-end items-center max-[1199px]:hidden">
-                        <i class="ri-phone-line pr-[5px] text-[20px]"></i>
-                        <a href="javascript:void(0)" class="text-[15px] font-medium">+381 61 2377 699</a>
+                        <i class="ri-phone-line pr-[5px] text-[#DAB877] text-[20px]"></i>
+                        <a href="javascript:void(0)" class="text-[15px] text-[#DAB877] font-medium">+381 69 2020 110</a>
                     </div>
                 </div>
             </div>
@@ -151,46 +155,140 @@
     </div>
 
     <!-- Hero slider -->
-    <section class="section-hero next pb-[100px] max-[1199px]:pb-[70px]">
+    <section class="section-hero next pb-[100px] max-[1199px]:pb-[70px] bg-[#000]">
         <div class="cr-slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="cr-hero-banner cr-banner-image-two w-full bg-[url('assets/img/banner/landing.jpg')] bg-no-repeat bg-cover bg-center h-[80vh] max-[1199px]:h-[600px] max-[767px]:h-[500px] max-[480px]:h-[400px] max-[360px]:h-[350px] relative z-[1]">
-                        <div class="flex hero-container flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-                            <div class="flex flex-wrap w-full">
-                                <div class="w-full px-[12px]">
-                                    <div class="cr-left-side-contain max-w-[550px] h-[80vh] flex flex-col justify-center max-[1199px]:max-w-[400px] max-[1199px]:h-[600px] max-[767px]:max-w-[290px] max-[767px]:h-[500px] max-[480px]:max-w-[250px] max-[480px]:h-[400px] max-[360px]:max-w-[210px] max-[360px]:h-[350px] slider-animation">
-                                        <h5 class="mb-[20px] text-[20px] font-Poppins font-bold leading-[1.2] text-[#fff] max-[991px]:mb-[15px] max-[767px]:text-[14px] max-[767px]:font-normal"><span class="mr-[5px] text-[#64b496] border-b-[2px] border-solid border-[#64b496] font-bold">100%</span> Proveren kvalitet</h5>
-                                        <h1 class="mb-[25px] text-[55px] font-Manrope font-extrabold leading-[68px] text-[#fff] relative max-[1399px]:text-[48px] max-[1399px]:leading-[56px] max-[1199px]:text-[40px] max-[1199px]:leading-[46px] max-[991px]:text-[28px] max-[991px]:leading-[36px] max-[991px]:mb-[20px] max-[767px]:text-[24px] max-[480px]:mb-[0] max-[360px]:text-[20px] max-[360px]:leading-[26px] max-[320px]:text-[22px] max-[320px]:leading-[24px] max-[320px]:mb-[10px]">Sve što vam treba, na samo jedan klik</h1>
-                                        <p class="mb-[0] text-[15px] font-Poppins text-[#311c73] leading-[1.75] max-[767px]:text-[14px] max-[480px]:hidden">Odaberi proizvode koji kombinuju kvalitet i pristupačnost, pružajući ti maksimalnu vrednost za svaki uloženi dinar.</p>
-                                        <div class="cr-last-buttons mt-[30px] flex max-[991px]:mt-[18px]">
-                                            <a href="shop-full-width.php" class="cr-button mr-[20px] h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#311c73] text-[#fff] border-[1px] border-solid border-[#311c73] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000]">
-                                                Prikaži proizvode
-                                            </a>
-                                        </div>
-                                    </div>
+                    <div class="relative w-full h-[80vh] max-[1199px]:h-[600px] max-[767px]:h-[500px] max-[480px]:h-[400px] max-[360px]:h-[350px] overflow-hidden z-[1]">
+
+                        <!-- Pozadinska slika sa opacity -->
+                        <div class="absolute inset-0 bg-[url('assets/img/banner/landing.jpg')] bg-no-repeat bg-cover bg-center opacity-70 z-[0]"></div>
+
+                        <!-- Sadržaj iznad pozadine -->
+                        <div class="flex hero-container flex-wrap justify-between relative items-center mx-auto h-full z-[1]
+                        min-[1600px]:max-w-[1500px]
+                        min-[1400px]:max-w-[1320px]
+                        min-[1200px]:max-w-[1140px]
+                        min-[992px]:max-w-[960px]
+                        min-[768px]:max-w-[720px]
+                        min-[576px]:max-w-[540px]">
+
+                        <div class="flex flex-wrap w-full">
+                            <div class="w-full px-[12px]">
+                            <div class="cr-left-side-contain max-w-[550px] h-full flex flex-col justify-center
+                                max-[1199px]:max-w-[400px]
+                                max-[767px]:max-w-[290px]
+                                max-[480px]:max-w-[250px]
+                                max-[360px]:max-w-[210px]
+                                slider-animation">
+
+                                <h5 class="mb-[20px] text-[20px] font-Poppins font-bold leading-[1.2] text-[#000]
+                                max-[991px]:mb-[15px]
+                                max-[767px]:text-[14px]
+                                max-[767px]:font-normal">
+                                <span class="mr-[5px] color-black border-black border-b-[2px] border-solid border-[#64b496] font-bold">20%</span>
+                                POPUSTA
+                                </h5>
+
+                                <h1 class="mb-[25px] text-[55px] font-Manrope font-extrabold leading-[68px] text-[#000] relative
+                                max-[1399px]:text-[48px]
+                                max-[1399px]:leading-[56px]
+                                max-[1199px]:text-[40px]
+                                max-[1199px]:leading-[46px]
+                                max-[991px]:text-[28px]
+                                max-[991px]:leading-[36px]
+                                max-[991px]:mb-[20px]
+                                max-[767px]:text-[24px]
+                                max-[480px]:mb-[0]
+                                max-[360px]:text-[20px]
+                                max-[360px]:leading-[26px]
+                                max-[320px]:text-[22px]
+                                max-[320px]:leading-[24px]
+                                max-[320px]:mb-[10px]">
+                                NA BALZAME I PARFEME
+                                </h1>
+
+                                <p class="mb-[0] text-[15px] font-Poppins text-[#000] leading-[1.75]
+                                max-w-[250px]
+                                max-[767px]:text-[14px]
+                                max-[480px]:hidden">
+                                Akcija traje od 16. do 31. maja 2025. godine.
+                                </p>
+
+                                <div class="cr-last-buttons mt-[30px] flex max-[991px]:mt-[18px]">
+                                <a href="shop-full-width.html"
+                                    class="cr-button mr-[20px] h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#DAB877] text-[#fff] border-[1px] border-solid border-[#DAB877] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000]">
+                                    Prikaži proizvode
+                                </a>
                                 </div>
+
                             </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cr-hero-banner cr-banner-image-one w-full bg-[url('assets/img/banner/landing-2.jpg')] bg-no-repeat bg-cover bg-center h-[80vh] max-[1199px]:h-[600px] max-[767px]:h-[500px] max-[480px]:h-[400px] max-[360px]:h-[350px] relative z-[1]">
-                        <div class="flex hero-container flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-                            <div class="flex flex-wrap w-full">
-                                <div class="w-full px-[12px]">
-                                    <div class="cr-left-side-contain max-w-[550px] h-[80vh] flex flex-col justify-center max-[1199px]:max-w-[400px] max-[1199px]:h-[600px] max-[767px]:max-w-[290px] max-[767px]:h-[500px] max-[480px]:max-w-[250px] max-[480px]:h-[400px] max-[360px]:max-w-[210px] max-[360px]:h-[350px] slider-animation">
-                                        <h5 class="mb-[20px] text-[20px] font-Poppins text-[#fff] font-bold leading-[1.2] max-[991px]:mb-[15px] max-[767px]:text-[14px] max-[767px]:font-normal"><span class="mr-[5px] text-[#64b496] border-b-[2px] border-solid border-[#64b496] font-bold">100%</span> Zadovoljnih korisnika</h5>
-                                        <h1 class="mb-[25px] text-[55px] font-Manrope font-extrabold leading-[68px] text-[#fff] relative max-[1399px]:text-[48px] max-[1399px]:leading-[56px] max-[1199px]:text-[40px] max-[1199px]:leading-[46px] max-[991px]:text-[28px] max-[991px]:leading-[36px] max-[991px]:mb-[20px] max-[767px]:text-[24px] max-[480px]:mb-[0] max-[360px]:text-[20px] max-[360px]:leading-[26px] max-[320px]:text-[22px] max-[320px]:leading-[24px] max-[320px]:mb-[10px]">Tvoja sigurna investicija u kvalitet.</h1>
-                                        <p class="mb-[0] text-[15px] font-Poppins text-[#311c73] leading-[1.75] max-[767px]:text-[14px] max-[480px]:hidden">Uživaj u pametnoj kupovini koja zadovoljava sve tvoje potrebe, bez nepotrebnog trošenja.</p>
-                                        <div class="cr-last-buttons mt-[30px] flex max-[991px]:mt-[18px]">
-                                            <a href="shop-full-width.php" class="cr-button mr-[20px] h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#311c73] text-[#fff] border-[1px] border-solid border-[#311c73] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000]">
-                                                Prikaži proizvode
-                                            </a>
-                                        </div>
-                                    </div>
+                    <div class="relative w-full h-[80vh] max-[1199px]:h-[600px] max-[767px]:h-[500px] max-[480px]:h-[400px] max-[360px]:h-[350px] overflow-hidden z-[1]">
+                        
+                        <!-- Pozadinska slika sa opacity -->
+                        <div class="absolute inset-0 bg-[url('assets/img/banner/landing-2.jpg')] bg-no-repeat bg-cover bg-center opacity-70 z-[0]"></div>
+                        
+                        <!-- Tekstualni sadržaj iznad slike -->
+                        <div class="flex hero-container flex-wrap justify-between relative items-center mx-auto h-full z-[1]
+                        min-[1600px]:max-w-[1500px]
+                        min-[1400px]:max-w-[1320px]
+                        min-[1200px]:max-w-[1140px]
+                        min-[992px]:max-w-[960px]
+                        min-[768px]:max-w-[720px]
+                        min-[576px]:max-w-[540px]">
+                        
+                        <div class="flex flex-wrap w-full">
+                            <div class="w-full px-[12px]">
+                            <div class="cr-left-side-contain max-w-[550px] h-full flex flex-col justify-center
+                                max-[1199px]:max-w-[400px]
+                                max-[767px]:max-w-[290px]
+                                max-[480px]:max-w-[250px]
+                                max-[360px]:max-w-[210px]
+                                slider-animation">
+                                
+                                <h5 class="mb-[20px] text-[20px] font-Poppins text-[#000] font-bold leading-[1.2] max-[991px]:mb-[15px] max-[767px]:text-[14px] max-[767px]:font-normal">
+                                <span class="mr-[5px] text-[#64b496] border-b-[2px] border-solid border-[#64b496] font-bold">100%</span>
+                                Zadovoljnih korisnika
+                                </h5>
+
+                                <h1 class="mb-[25px] text-[55px] font-Manrope font-extrabold leading-[68px] text-[#000] relative
+                                max-[1399px]:text-[48px]
+                                max-[1399px]:leading-[56px]
+                                max-[1199px]:text-[40px]
+                                max-[1199px]:leading-[46px]
+                                max-[991px]:text-[28px]
+                                max-[991px]:leading-[36px]
+                                max-[991px]:mb-[20px]
+                                max-[767px]:text-[24px]
+                                max-[480px]:mb-[0]
+                                max-[360px]:text-[20px]
+                                max-[360px]:leading-[26px]
+                                max-[320px]:text-[22px]
+                                max-[320px]:leading-[24px]
+                                max-[320px]:mb-[10px]">
+                                Tvoja sigurna investicija u kvalitet.
+                                </h1>
+
+                                <p class="mb-[0] text-[15px] font-Poppins text-[#000] leading-[1.75] max-[767px]:text-[14px] max-[480px]:hidden">
+                                Uživaj u pametnoj kupovini koja zadovoljava sve tvoje potrebe, bez nepotrebnog trošenja.
+                                </p>
+
+                                <div class="cr-last-buttons mt-[30px] flex max-[991px]:mt-[18px]">
+                                <a href="shop-full-width.php"
+                                    class="cr-button mr-[20px] h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#DAB877] text-[#fff] border-[1px] border-solid border-[#DAB877] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000]">
+                                    Prikaži proizvode
+                                </a>
                                 </div>
+
                             </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +298,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section-services pb-[100px] max-[1199px]:pb-[70px] relative">
+    <section class="section-services pb-[100px] max-[1199px]:pb-[70px] relative bg-[#000]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px]">
@@ -269,15 +367,15 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer pt-[100px] max-[1199px]:pt-[70px] bg-off-white bg-[#f7f7f8] relative border-t-[1px] border-solid border-[#e9e9e9]">
+    <footer class="footer pt-[100px] max-[1199px]:pt-[70px] bg-[#DAB877] relative border-t-[1px] border-solid border-[#DAB877]">
         <div class="footer-container flex flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full footer-top pb-[100px] max-[1199px]:pb-[70px]">
                 <div class="min-[1200px]:w-[33.33%] min-[992px]:w-[50%] min-[576px]:w-full w-full px-[12px] cr-footer-border">
                     <div class="cr-footer-logo max-w-[400px] mb-[15px] pb-[0]">
                         <div class="image pb-[15px]">
-                            <img src="assets/img/logo/logo.svg" alt="logo" class="logo w-[100px] block">
+                            <img src="assets/img/logo/logo2.png" alt="logo" class="logo w-[100px] block">
                         </div>
-                        <p class="font-Poppins text-[14px] text-[#7a7a7a] mb-[0] leading-[1.75]">Popularni proizvodi iz celog sveta kakve niste videli do sada!</p>
+                        <p class="font-Poppins text-[14px] text-[#000] mb-[0] leading-[1.75]">Popularni proizvodi iz celog sveta kakve niste videli do sada!</p>
                     </div>
                     <div class="cr-footer">
                         <h4 class="cr-sub-title cr-title-hidden relative hidden max-[991px]:block font-Manrope text-[18px] max-[991px]:text-[15px] font-bold leading-[1.3] text-[#000] mb-[15px] max-[991px]:py-[15px] max-[991px]:mb-[0] max-[991px]:border-b-[1px] max-[991px]:border-solid max-[991px]:border-[#e9e9e9]">
@@ -286,10 +384,10 @@
                         </h4>
                         <ul class="cr-footer-links max-[991px]:hidden cr-footer-dropdown max-[1199px]:max-w-[500px] max-[991px]:mt-[24px]">
                             <li class="mail-icon mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative pl-[30px] max-[1399px]:mt-[20px] max-[991px]:mt-[15px]">
-                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">adnectmarketing@gmail.com</a>
+                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">lucicbarbara993@gmail.com</a>
                             </li>
                             <li class="phone-icon font-Poppins text-[14px] leading-[26px] text-[#777] relative pl-[30px] mb-[0] max-[1399px]:mt-[20px] max-[991px]:mt-[15px]">
-                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">+381 61 2377 699</a>
+                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">+381 69 2020 110</a>
                             </li>
                         </ul>
                     </div>
@@ -301,9 +399,9 @@
                             <span class="cr-heading-res hidden"></span>
                         </h4>
                         <ul class="cr-footer-links max-[991px]:hidden cr-footer-dropdown max-[991px]:mt-[24px]">
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="track-order.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Dostava i plaćanje</a></li>
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="policy.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Politika privatnosti</a></li>
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="terms.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Uslovi korišćenja</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="track-order.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Dostava i plaćanje</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="policy.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Politika privatnosti</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="terms.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Uslovi korišćenja</a></li>
                         </ul>
                     </div>
                 </div>
@@ -314,9 +412,9 @@
                             <span class="cr-heading-res hidden"></span>
                         </h4>
                         <ul class="cr-footer-links max-[991px]:hidden cr-footer-dropdown max-[991px]:mt-[24px]">
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px] max-[991px]:mt-[-5px]"><a href="index.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Početna</a></li>
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="shop-full-width.php" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Proizvodi</a></li>
-                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="contact-us.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#777] hover:text-[#64b496]">Kontakt</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px] max-[991px]:mt-[-5px]"><a href="index.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Početna</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="shop-full-width.php" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Proizvodi</a></li>
+                            <li class="mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative max-[991px]:my-[12px]"><a href="contact-us.html" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -328,22 +426,22 @@
                         </h4>
                         <div class="cr-footer-links max-[991px]:hidden cr-footer-dropdown max-[1199px]:max-w-[500px] max-[991px]:mt-[24px]">
                             <form id="emailForm" method="post" class="cr-search-footer relative">
-                                <input id="email" class="search-input w-full h-[44px] py-[5px] px-[15px] border-[1px] border-solid border-[#e9e9e9] outline-[0] rounded-[5px]" type="text" placeholder="Unesi mejl adresu">
+                                <input id="email" class="search-input bg-[#000] w-full h-[44px] py-[5px] px-[15px] outline-[0] rounded-[5px] color-white custom-placeholder" type="text" placeholder="Unesi mejl adresu">
                                 <a href="" class="search-btn w-[50px] absolute right-[0] top-[0] bottom-[0] flex items-center justify-center">
                                     <i class="ri-send-plane-fill text-[21px] text-[#000]"></i>
                                 </a>
                             </form>
                         </div>
                         <div class="cr-social-media my-[22px] mx-[-2px] flex flex-row max-[991px]:mt-[40px] max-[991px]:mr-[0] max-[991px]:mb-[24px] max-[991px]:ml-[0] max-[991px]:flex-wrap">
-                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#000]"><a href="https://www.facebook.com/profile.php?id=61574727697120" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-facebook-line"></i></a></span>
-                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#000]"><a href="https://www.tiktok.com/@klikcentar.com?lang=en" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-tiktok-line"></i></a></span>
-                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#000]"><a href="https://www.instagram.com/klik_centar/" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-instagram-line"></i></a></span>
+                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#fff]"><a href="https://www.facebook.com/profile.php?id=61574727697120" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-facebook-line"></i></a></span>
+                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#fff]"><a href="https://www.tiktok.com/@klikcentar.com?lang=en" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-tiktok-line"></i></a></span>
+                            <span class="m-[2px] font-Poppins text-[17px] font-normal leading-[1.625] text-[#fff]"><a href="https://www.instagram.com/klik_centar/" class="transition-all duration-[0.3s] ease-in-out w-[35px] h-[35px] flex items-center justify-center leading-[11px] bg-[#fff] border-[1px] border-solid border-[#e1dfdf] rounded-[5px] text-[#000] hover:text-[#64b496]"><i class="ri-instagram-line"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cr-last-footer w-full py-[20px] border-t-[1px] border-solid border-[#e9e9e9] text-center">
-                <p class="font-Poppins text-[14px] text-[#000] leading-[1.2] ">&copy; <span id="copyright_year"></span> <a href="index.html" class="text-[#64b496]">Adnect</a>, Sva prava zadržana.</p>
+            <div class="cr-last-footer w-full py-[20px] border-t-[1px] border-solid border-[#000] text-center">
+                <p class="font-Poppins text-[14px] text-[#000] leading-[1.2] ">&copy; <span id="copyright_year"></span> <a href="index.html" class="text-[#000]">Adnect</a>, Sva prava zadržana.</p>
             </div>
         </div>
     </footer>

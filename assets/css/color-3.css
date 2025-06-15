@@ -1,219 +1,219 @@
 /* color-3 */
 .header .dropdown button {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .header .cr-calling i {
-  color: #311c73;
+  color: #DAB877;
 }
 .header .cr-category-dropdown button {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .header .cr-menu-inner .cr-category-dropdown button {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 ul.navbar-nav li.nav-item:hover a.nav-link::before {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 ul.navbar-nav li.nav-item a.nav-link::before {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 ul.navbar-nav li.nav-item a.nav-link:hover::before {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 ul.navbar-nav .dropdown .dropdown-menu li a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 
 ul#myCategoriesTab li.active a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-header-buttons a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-categories ul.nav-tabs li.nav-item .center-categories-inner {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-categories ul.nav-tabs li.nav-item button:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-categories ul.nav-tabs li.nav-item .nav-link.active {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-slider .swiper-pagination-bullet {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 .cr-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .top-header .cr-search .search-btn {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .top-header .cr-search input,
 .top-header .cr-search select {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 
 .cr-left-side-contain h5 span {
-  color: #311c73;
-  border-bottom: 2px solid #311c73;
+  color: #DAB877;
+  border-bottom: 2px solid #DAB877;
 }
 
 .top-header .cr-right-bar .cr-right-bar-item:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 .top-header .cr-right-bar .cr-right-bar-item:hover span {
-  color: #311c73;
+  color: #DAB877;
 }
 .top-header .cr-right-bar ul.navbar-nav .dropdown .dropdown-menu li a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-shop-sideview .cr-former-shop-image .cr-former-shop-contain h5.title span {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-product-banner-image .cr-product-banner-contain p .percent {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-categories h5 a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-button {
-  background-color: #311c73;
-  border-color: #311c73;
+  background-color: #DAB877;
+  border-color: #DAB877;
 }
 
 .cr-btn-secondary {
-  color: #311c73;
-  border-color: #311c73;
+  color: #DAB877;
+  border-color: #DAB877;
 }
 .cr-btn-secondary:hover {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .cr-center-categories .view-more-buttons h4 {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-product-tabs ul .active {
-  color: #311c73 !important;
+  color: #DAB877 !important;
 }
 
 .cr-product-card .cr-product-image .cr-shopping-bag i {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-product-card .cr-product-image .cr-shopping-bag.active {
-  background-color: #311c73;
-  border-color: #311c73;
+  background-color: #DAB877;
+  border-color: #DAB877;
 }
 .cr-product-card .cr-product-image .cr-side-view .wishlist.active {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .col-50.col-size .cr-product-box .cr-product-card .cr-product-image .cr-shopping-bag.active,
 .col-100.col-size .cr-product-box .cr-product-card .cr-product-image .cr-shopping-bag.active {
-  background-color: #311c73;
-  border-color: #311c73;
+  background-color: #DAB877;
+  border-color: #DAB877;
 }
 
 .cr-checkout-section [type=radio]:checked + label:before {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 .cr-checkout-section [type=radio]:checked + label:after {
-  background: #311c73;
+  background: #DAB877;
 }
 
 .cr-login .cr-content-form .custom input:checked + label:after {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 
 .cr-track .cr-step-completed .cr-step-indicator {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-track .cr-step-active .cr-step-icon {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-product-details .cr-brand a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-product-details p.cr-price .new-price {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-product-details a.title:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-deal-rightside .cr-deal-content span code {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-products-rightbar .cr-products-rightbar-content .cr-unique {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .cr-products-leftbar .cr-products-leftbar-content h2 {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-footer ul li::after {
-  color: #311c73;
+  color: #000;
 }
 .cr-footer ul li a:hover {
-  color: #311c73;
+  color: #000;
 }
 .cr-footer .cr-social-media span a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-last-footer p a {
-  color: #311c73;
+  color: #000;
 }
 
 a.back-to-top {
-  color: #311c73;
-  border-color: #311c73;
+  color: #DAB877;
+  border-color: #DAB877;
 }
 
 .cr-side-cart .cr-menu-title .menu-title {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-view-more {
-  color: #311c73 !important;
+  color: #DAB877 !important;
 }
 
 .cr-blog .cr-blog-content a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-blog .cr-blog-content .read {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-blog .cr-blog-content .read:hover {
   color: #777;
 }
 
 .cr-cat-dropdown .cr-cat-tab .tab-content .cr-col-title {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-cat-dropdown .cr-cat-tab button.active {
-  color: #311c73;
-  border-color: #311c73;
+  color: #DAB877;
+  border-color: #DAB877;
 }
 
 ul#myTab li.active {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 ul#myTab li.active a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-breadcrumb-image {
@@ -221,131 +221,131 @@ ul#myTab li.active a {
 }
 
 .cr-pagination ul li.active {
-  background-color: #311c73;
-  border-color: #311c73;
+  background-color: #DAB877;
+  border-color: #DAB877;
 }
 
 .cr-services .cr-services-image svg path {
-  fill: #311c73;
+  fill: #DAB877;
 }
 
 .cr-services .cr-services-image i {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-breadcrumb-image .cr-breadcrumb-title span a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-checkbox .checkbox-group input:checked + label::after {
-  border: solid #311c73;
+  border: solid #DAB877;
   border-width: 0 2px 2px 0;
 }
 
 .cr-size-and-weight .cr-product-price span.new-price {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-size-and-weight .cr-size-weight .cr-kg ul .active-color {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-size-and-weight .cr-add-card .cr-card-icon a i:hover {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .cr-paking-delivery .nav-tabs .nav-item a:after {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-paking-delivery .nav-tabs .nav-item a:hover:after {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-paking-delivery .nav-tabs .nav-item.active a {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-paking-delivery .nav-tabs .nav-item.active a:after {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .cr-shop-price .price-range-slider .range-bar .ui-slider-handle + span {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-shop-price .price-range-slider .range-bar .ui-slider-handle {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .cr-shop-price .price-range-slider .range-bar .ui-slider-range {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 .active-grid {
-  background-color: #311c73 !important;
+  background-color: #DAB877 !important;
 }
 
 .cr-blog-classic .cr-blog-classic-content .cr-comment span {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-blog-classic .cr-blog-classic-content a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-blog-recent-post .cr-blog-recent-content span {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-blog-sideview .cr-serch-box .cr-search .search-btn {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 
 ul.cr-tags li a:hover {
-  background-color: #311c73;
-  border-color: #311c73;
+  background-color: #DAB877;
+  border-color: #DAB877;
 }
 
 .cr-blog-details .cr-blog-details-content .cr-admin-date span code {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-blog-inner-cols .cr-blog-inner-content::after {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-blog-details-message h5.title {
-  color: #311c73;
+  color: #DAB877;
 }
 .cr-blog-details-message::after {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-about-content h4.elementor .elementor-counter-number {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-info-box .cr-icon i {
-  color: #311c73;
+  color: #DAB877;
 }
 
 .cr-wish-notify p,
 .cr-compare-notify p,
 .cr-cart-notify p {
-  border-color: #311c73;
+  border-color: #DAB877;
 }
 .cr-wish-notify a,
 .cr-compare-notify a,
 .cr-cart-notify a {
-  color: #311c73;
+  color: #DAB877;
 }
 
 a.back-to-top .back-to-top-wrap svg path {
-  stroke: #311c73;
+  stroke: #DAB877;
 }
 
 .product-card-2 .cr-pro-content .cr-pro-title a:hover {
-  color: #311c73;
+  color: #DAB877;
 }
 .product-card-2 .cr-product-inner .cr-pro-actions a:hover {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .product-card-2 .cr-product-inner .cr-pro-actions .wishlist.active,
 .product-card-2 .cr-product-inner .cr-pro-actions .cr-shopping-bag.active {
-  background-color: #311c73;
+  background-color: #DAB877;
 }
 .product-card-2 .cr-product-inner .cr-pro-actions .wishlist.active i,
 .product-card-2 .cr-product-inner .cr-pro-actions .cr-shopping-bag.active i {
@@ -353,10 +353,10 @@ a.back-to-top .back-to-top-wrap svg path {
 }
 
 .cr-location-block .cr-location-dropdown .loc-grid .loc-list:hover {
-  color: #311c73;
-  border-color: #311c73;
+  color: #DAB877;
+  border-color: #DAB877;
 }
 .cr-location-block .cr-location-dropdown .loc-grid .loc-list:hover i {
-  color: #311c73;
+  color: #DAB877;
 }
 /*# sourceMappingURL=color-3.css.map */
