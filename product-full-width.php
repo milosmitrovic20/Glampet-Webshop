@@ -224,15 +224,15 @@ while ($row = $result->fetch_assoc()) {
                 </div>
                 <div class="min-[1400px]:w-[66.66%] min-[1200px]:w-[58.33%] min-[768px]:w-[50%] w-full px-[12px] mb-[24px]">
                     <div class="cr-size-and-weight-contain border-b-[1px] border-solid border-[#e9e9e9] pb-[20px] max-[767px]:mt-[24px]">
-                        <h2 class="heading mb-[15px] block text-[#2b2b2d] text-[22px] leading-[1.5] font-medium max-[1399px]:text-[26px] max-[991px]:text-[20px]"><?php echo $product['title']; ?></h2>
-                        <p class="mb-[0] text-[14px] font-Poppins text-[#7a7a7a] leading-[1.75] "><?php echo $product['short_description']; ?></p>
+                        <h2 class="heading mb-[15px] block text-[#fff] text-[22px] leading-[1.5] font-medium max-[1399px]:text-[26px] max-[991px]:text-[20px]"><?php echo $product['title']; ?></h2>
+                        <p class="mb-[0] text-[14px] font-Poppins text[#DAB877] leading-[1.75] "><?php echo $product['short_description']; ?></p>
                     </div>
                     <div class="cr-size-and-weight pt-[20px]">
                         <div class="list">
                             <ul class="mt-[15px] p-[0] mb-[1rem]">
-                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Cena dostave je 400 dinara</li>
-                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Dostava za 2-3 radna dana</label></li>
-                                <li class="py-[5px] text-[#777] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Plaćanje pouzećem</li>
+                                <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Cena dostave je 400 dinara</li>
+                                <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Dostava za 2-3 radna dana</label></li>
+                                <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#2b2b2d] font-semibold flex justify-between">Plaćanje pouzećem</li>
                             </ul>
                         </div>
                         <div class="cr-product-price pt-[20px]">
@@ -246,31 +246,7 @@ while ($row = $result->fetch_assoc()) {
                                 <button type="button" class="minus w-[18px] h-[18px] p-[0] bg-[#fff] border-[1px] border-solid border-[#e9e9e9] rounded-[5px] leading-[0] absolute bottom-[0] right-[0]">-</button>
                             </div>
                             <div class="cr-add-button ml-[15px] max-[380px]:hidden">
-                                <button type="button" data-id="<?php echo $productId; ?>" data-name="<?php echo $product['title']; ?>" data-price="<?php echo $product['discounted_price']; ?>" data-image="<?php echo $images[0]; ?>" class="add-to-cart cr-button cr-shopping-bag h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#311c73] text-[#fff] border-[1px] border-solid border-[#311c73] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000] max-[1199px]:py-[8px] max-[1199px]:px-[15px]">Dodaj u korpu</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap w-full" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
-                <div class="w-full px-[12px]">
-                    <div class="cr-paking-delivery mt-[40px] p-[24px] bg-[#fff] border-[1px] border-solid border-[#e9e9e9] rounded-[5px]">
-                        <ul class="nav nav-tabs border-b-[1px] border-solid border-[#dee2e6] flex flex-wrap justify-left" id="mydeliveryTab">
-                            <li class="nav-item transition-all duration-[0.3s] ease-in-out mr-[30px] relative active">
-                                <a href="#description" class="mb-[25px] flex font-Poppins text-[17px] font-semibold leading-[1.5] tracking-[0] text-[#2b2b2d] text-left max-[1399px]:text-[18px] max-[767px]:text-[16px] max-[575px]:mb-[15px]">Opis</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-delivery-pane" id="description">
-                                <div class="cr-tab-content">
-                                    <div class="cr-description pt-[30px]">
-                                        <p class="text-[14px] text-left mb-[0] font-Poppins text-[#7a7a7a] leading-[1.75]"><?php echo $product['description']; ?></p>
-                                    </div>
-                                    <h4 class="heading mb-[0] pt-[30px] pb-[20px] font-Poppins text-[16px] font-medium leading-[1.5] text-left text-[#2b2b2d] border-b-[1px] border-solid border-[#e9e9e9]">Pakovanje i dostava</h4>
-                                    <div class="cr-description pt-[30px]">
-                                        <p class="text-[14px] text-left mb-[0] font-Poppins text-[#7a7a7a] leading-[1.75]">Dostava za 2-3 radna dana, direktno na vašu adresu. Cena dostave je 400 dinara.</p>
-                                    </div>
-                                </div>
+                                <button type="button" data-id="<?php echo $productId; ?>" data-name="<?php echo $product['title']; ?>" data-price="<?php echo $product['discounted_price']; ?>" data-image="<?php echo $images[0]; ?>" class="add-to-cart cr-button cr-shopping-bag h-[40px] font-bold transition-all duration-[0.3s] ease-in-out py-[8px] px-[22px] text-[14px] font-Manrope leading-[1.2] bg-[#DAB877] text-[#fff] border-[1px] border-solid border-[#311c73] rounded-[5px] flex items-center justify-center hover:bg-[#000] hover:border-[#000] max-[1199px]:py-[8px] max-[1199px]:px-[15px]">Dodaj u korpu</button>
                             </div>
                         </div>
                     </div>
