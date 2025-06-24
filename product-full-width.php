@@ -227,7 +227,7 @@ while ($row = $result->fetch_assoc()) {
                         <h2 class="heading mb-[15px] block text-[#fff] text-[22px] leading-[1.5] font-medium max-[1399px]:text-[26px] max-[991px]:text-[20px]"><?php echo $product['title']; ?></h2>
                         <p class="mb-[0] text-[14px] font-Poppins text-[#fff] leading-[1.75] "><?php echo $product['short_description']; ?></p>
                     </div>
-                    <div class="cr-size-and-weight pt-[20px]">
+                    <div class="cr-size-and-weight pt-[20px] pb-[8px]">
                         <div class="list">
                             <ul class="mt-[15px] p-[0] mb-[1rem]">
                                 <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">Cena dostave je 400 dinara</li>
