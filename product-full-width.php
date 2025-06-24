@@ -227,7 +227,7 @@ while ($row = $result->fetch_assoc()) {
                         <h2 class="heading mb-[15px] block text-[#fff] text-[22px] leading-[1.5] font-medium max-[1399px]:text-[26px] max-[991px]:text-[20px]"><?php echo $product['title']; ?></h2>
                         <p class="mb-[0] text-[14px] font-Poppins text-[#fff] leading-[1.75] "><?php echo $product['short_description']; ?></p>
                     </div>
-                    <div class="cr-size-and-weight pt-[20px] mb-[20px]">
+                    <div class="cr-size-and-weight pt-[20px]">
                         <div class="list">
                             <ul class="mt-[15px] p-[0] mb-[1rem]">
                                 <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">Cena dostave je 400 dinara</li>
@@ -275,7 +275,7 @@ while ($row = $result->fetch_assoc()) {
     </div>
 
     <!-- Footer -->
-    <footer class="footer pt-[100px] max-[1199px]:pt-[70px] bg-[#DAB877] relative border-t-[1px] border-solid border-[#DAB877]">
+    <footer class="footer pt-[100px] mt-[10px] max-[1199px]:pt-[70px] bg-[#DAB877] relative border-t-[1px] border-solid border-[#DAB877]">
         <div class="footer-container flex flex-wrap justify-between relative items-center mx-auto min-[1600px]:max-w-[1500px] min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full footer-top pb-[100px] max-[1199px]:pb-[70px]">
                 <div class="min-[1200px]:w-[33.33%] min-[992px]:w-[50%] min-[576px]:w-full w-full px-[12px] cr-footer-border">
