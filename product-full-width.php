@@ -104,7 +104,7 @@ while ($row = $result->fetch_assoc()) {
                 <div class="w-full px-[12px]">
                     <div class="top-header py-[20px] flex flex-row gap-[10px] justify-between border-b-[1px] border-solid border-[#DAB877] relative z-[4] max-[575px]:py-[15px] max-[575px]:block">
                         <a href="index.html" class="cr-logo max-[575px]:mb-[15px] max-[575px]:flex max-[575px]:justify-center">
-                            <img src="assets/img/logo/logo2.png" alt="logo" class="logo block h-[35px] max-[575px]:w-[100px]">
+                            <img src="assets/img/logo/logo2.png" alt="logo" class="logo block h-[35px] max-[575px]:h-[30px] object-contain" />
                         </a>
                         <form class="cr-search relative max-[575px]:max-w-[350px] max-[575px]:m-auto" action="shop-full-width.php" method="get">
                             <input class="search-input bg-[#000] w-[600px] h-[45px] pl-[15px] pr-[175px] border-[1px] border-solid border-[#64b496] rounded-[5px] outline-[0] max-[1399px]:w-[400px] max-[991px]:max-w-[350px] max-[575px]:w-full max-[420px]:pr-[45px] custom-placeholder2 color-glam" type="text" name="query" placeholder="Pretražite...">
@@ -133,12 +133,12 @@ while ($row = $result->fetch_assoc()) {
                         </div>
                     </div>
                     <nav class="justify-between relative flex flex-wrap items-center max-[991px]:w-full max-[991px]:py-[10px]">
-                        <a href="javascript:void(0)" class="navbar-toggler py-[7px] px-[14px] hidden text-[16px] leading-[1] max-[991px]:flex max-[991px]:p-[0] max-[991px]:border-[0]">
-                            <i class="ri-menu-3-line max-[991px]:text-[20px]"></i>
+                        <a href="javascript:void(0)" class="navbar-toggler hidden py-[7px] px-[14px] text-[16px] leading-[1] max-[991px]:flex max-[991px]:p-[0] max-[991px]:border-[0]">
+                            <i class="ri-menu-3-line max-[991px]:text-[20px] text-[#DAB877]"></i>
                         </a>
                         <div class="cr-header-buttons hidden max-[991px]:flex max-[991px]:items-center">
                             <a href="cart.html" class="cr-right-bar-item transition-all duration-[0.3s] ease-in-out mr-[16px] max-[991px]:m-[0]">
-                                <i class="ri-shopping-cart-line text-[20px]"></i>
+                                <i class="ri-shopping-cart-line text-[20px] text-[#DAB877]"></i>
                             </a>
                         </div>
                         <div class="min-[992px]:flex min-[992px]:basis-auto grow-[1] items-center hidden" id="navbarSupportedContent">
