@@ -117,7 +117,7 @@ try {
         $mail->SMTPAuth = true;                               
         $mail->Username = 'prodaja@glampetexclusive.com';       
         $mail->Password = 'O7^ho;6hDZ?3';                    
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;   
         $mail->Port = 465;                                   
 
         //Recipients
