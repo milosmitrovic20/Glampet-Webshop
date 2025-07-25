@@ -113,16 +113,16 @@ try {
         $mail->CharSet = 'UTF-8';
         //Server settings
         $mail->isSMTP();                                     
-        $mail->Host = 'klikcentar.com';                 
+        $mail->Host = 'glampetexclusive.com';                 
         $mail->SMTPAuth = true;                               
-        $mail->Username = 'prodaja@klikcentar.com';       
-        $mail->Password = 'h5eE3kFxV_HWs98';                    
+        $mail->Username = 'prodaja@glampetexclusive.com';       
+        $mail->Password = 'O7^ho;6hDZ?3';                    
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
-        $mail->Port = 587;                                   
+        $mail->Port = 465;                                   
 
         //Recipients
-        $mail->setFrom('prodaja@klikcentar.com', 'Klikcentar');
-        $mail->addAddress('adnectmarketing@gmail.com');  // Customer's email
+        $mail->setFrom('prodaja@glampetexclusive.com', 'Glampet');
+        $mail->addAddress('mitrovicm2005@gmail.com');  // Customer's email
 
         // Email content
         $mail->isHTML(true);                                  
