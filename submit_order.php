@@ -123,6 +123,7 @@ try {
         //Recipients
         $mail->setFrom('prodaja@glampetexclusive.com', 'Glampet');
         $mail->addAddress('mitrovicm2005@gmail.com');  // Customer's email
+        $mail->addBCC('glampetexclusivenis@gmail.com');
 
         // Email content
         $mail->isHTML(true);                                  

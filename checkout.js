@@ -47,7 +47,7 @@ const displayCartItems = () => {
                     </div>
                     <div class="cr-pro-content cr-product-details justify-start w-[calc(100%-143px)] p-[0] flex flex-col border-[0]">
                         <h5 class="cr-pro-title text-left mb-[.5rem] pr-[15px] text-[15px] leading-[1.2] max-[1199px]:mb-[0]">
-                            <a href="product-left-sidebar.html" class="text-[15px] text-[#000] font-medium leading-[1.2]">${item.name}</a>
+                            <a href="product-left-sidebar.html" class="text-[15px] text-[#DAB877] font-medium leading-[1.2]">${item.name}</a>
                         </h5>
                         <p class="cr-price font-Poppins text-[16px] leading-[1.75] text-[#7a7a7a] text-left max-[1199px]:text-[14px]">
                             <span class="new-price text-[#64b496] font-bold">${item.price} RSD</span>
