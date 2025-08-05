@@ -158,6 +158,11 @@ while ($row = $result->fetch_assoc()) {
                                         Galerija
                                     </a>
                                 </li>
+                                <li class="nav-item relative mr-[25px] max-[1399px]:mr-[20px] max-[1199px]:mr-[30px]">
+                                    <a class="nav-link font-Poppins text-[14px] font-medium block text-[#DAB877] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="about.html">
+                                        O nama
+                                    </a>
+                                </li>
                                 <li class="nav-item relative">
                                     <a class="nav-link font-Poppins text-[14px] font-medium block text-[#DAB877] z-[1] flex items-center relative py-[11px] px-[8px] max-[1199px]:py-[8px] max-[1199px]:px-[0]" href="contact-us.html">
                                         Kontakt
@@ -193,6 +198,9 @@ while ($row = $result->fetch_assoc()) {
                     </li>
                     <li class="dropdown drop-list relative leading-[28px]">
                         <a href="gallery.html" class="dropdown-list py-[12px] block capitalize text-[15px] font-medium text-[#444] border-b-[1px] border-solid border-[#e9e9e9]">Galerija</a>
+                    </li>
+                    <li class="dropdown drop-list relative leading-[28px]">
+                        <a href="about.html" class="dropdown-list py-[12px] block capitalize text-[15px] font-medium text-[#444] border-b-[1px] border-solid border-[#e9e9e9]">Galerija</a>
                     </li>
                     <li class="dropdown drop-list relative leading-[28px]">
                         <a href="contact-us.html" class="dropdown-list py-[12px] block capitalize text-[15px] font-medium text-[#444] border-b-[1px] border-solid border-[#e9e9e9]">Kontakt</a>
@@ -238,7 +246,7 @@ while ($row = $result->fetch_assoc()) {
                     <div class="cr-size-and-weight pt-[20px]">
                         <div class="list">
                             <ul class="mt-[15px] p-[0] mb-[1rem]">
-                                <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">Cena dostave je 400 dinara</li>
+                                <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">+ troškovi dostave</li>
                                 <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">Dostava za 2-3 radna dana</label></li>
                                 <li class="py-[5px] text-[#fff] flex"><label class="min-w-[100px] mr-[10px] text-[#fff] font-semibold flex justify-between">Plaćanje pouzećem</li>
                             </ul>
@@ -291,7 +299,7 @@ while ($row = $result->fetch_assoc()) {
                         <div class="image pb-[15px]">
                             <img src="assets/img/logo/logo2.png" alt="logo" class="logo w-[100px] block">
                         </div>
-                        <p class="font-Poppins text-[14px] text-[#000] mb-[0] leading-[1.75]">Iznenadite svog ljubimca proizvodima koje će obožavati!</p>
+                        <p class="font-Poppins text-[14px] text-[#000] mb-[0] leading-[1.75]">Nežno, ali moćno formulisano sa pažnjom za čisto krzno, za spokojnu kožu. Za ljubav u svakom pranju.</p>
                     </div>
                     <div class="cr-footer">
                         <h4 class="cr-sub-title cr-title-hidden relative hidden max-[991px]:block font-Manrope text-[18px] max-[991px]:text-[15px] font-bold leading-[1.3] text-[#000] mb-[15px] max-[991px]:py-[15px] max-[991px]:mb-[0] max-[991px]:border-b-[1px] max-[991px]:border-solid max-[991px]:border-[#e9e9e9]">
@@ -300,7 +308,7 @@ while ($row = $result->fetch_assoc()) {
                         </h4>
                         <ul class="cr-footer-links max-[991px]:hidden cr-footer-dropdown max-[1199px]:max-w-[500px] max-[991px]:mt-[24px]">
                             <li class="mail-icon mb-[12px] font-Poppins text-[14px] leading-[26px] text-[#777] relative pl-[30px] max-[1399px]:mt-[20px] max-[991px]:mt-[15px]">
-                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">lucicbarbara993@gmail.com</a>
+                                <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">glampetexclusivenis@gmail.com</a>
                             </li>
                             <li class="phone-icon font-Poppins text-[14px] leading-[26px] text-[#777] relative pl-[30px] mb-[0] max-[1399px]:mt-[20px] max-[991px]:mt-[15px]">
                                 <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out relative font-Poppins text-[14px] leading-[26px] text-[#000] hover:text-[#64b496]">+381 69 2020 110</a>
